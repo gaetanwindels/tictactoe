@@ -8,6 +8,10 @@ let clients = [];
 let rooms = [];
 let roomNumber = 1;
 
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname + '/client/index.html'));
+});
+
 io.on('connection', function (client) {
 
     clients.push(client);
