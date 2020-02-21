@@ -16,7 +16,7 @@ let playerSymbol = null;
 let isMyTurnToPlay = false;
 
 // SOCKET EVENTS
-let socket = io.connect("https://localhost");
+let socket = io.connect("https://boiling-basin-18623.herokuapp.com/");
 socket.on('connect', function (data) {
     socket.emit('join', 'Hello World from client');
 });
