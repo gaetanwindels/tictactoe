@@ -4,7 +4,7 @@ var io = require('socket.io')(http);
 var path = require('path');
 var express = require('express');
 
-app.use(express.static('js'));
+app.use(express.static('client/js'));
 
 http.listen(process.env.PORT || 5000);
 
