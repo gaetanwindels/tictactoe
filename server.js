@@ -2,6 +2,7 @@ var app = require('express')();
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 var path = require('path');
+app.use(express.static('js'));
 
 http.listen(process.env.PORT || 5000);
 
